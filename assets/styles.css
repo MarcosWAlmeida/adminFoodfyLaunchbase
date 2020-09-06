@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+   .main-menu {
+      display: flex;
+      max-width: 940px;
+      margin: 36px auto;
+  }
+
+  header .menu {
+    display: flex;
+    margin-left: 123px;
+  }
+
+  header .menu a {
+    margin-right: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto' , sans-serif;
+
+  }
+
+  header .menu a:hover {
+    font-weight: bold;
+  }
+
+  .banner {
+      width: 940px;
+      margin: 0 auto 50px;
+      height: 366px;
+      background-color: #FBDFDB;
+      border-radius: 30px;
+      position: relative;
+  }
+
+  .banner img {
+      position: absolute;
+      right:100px;
+      bottom: 0;
+  }
+
+  .banner .descricao h2 {
+      font-size: 32px;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      color: #111111;
+      position: absolute;
+      left: 60px;
+      top: 117px;   
+  }
+
+  .banner .descricao p {
+    font-size: 18px;
+    font-family: 'Roboto' , sans-serif;
+    width: 316px;
+    height: 84px;
+    line-height: 28px;
+    color:#000000;
+    position: absolute;
+    left: 60px;
+    top: 165px;
+
+  }
+
+  .title {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    max-width: 940px;
+    margin: 0 auto 20px; 
+  }
+
+  .galeria_receitas {
+    margin: 0 auto;
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 35px;
+  }
+  
+  .receitas img,
+  .receitas_home img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+  }
+
+  
+
+  .receitas h4,
+  .receitas_home h4 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #111111;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .receitas h5,
+  .receitas_home h5 {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #777777;
+    font-weight: normal;  
+  }
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 63px;
+  margin-top: 50px;
+  background: #EEEEEE;
+}
+
+footer p {
+  font-size: 14px;
+  color:#999999;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.about {
+  font-size: 24px;
+  width: 940px;
+  margin: 0 auto 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #111111;
+}
+
+.about_text {
+  font-size: 20px;
+  width: 940px;
+  margin: 0 auto;
+  font-family: 'Roboto' , sans-serif;
+  color: #444444;
+}
+
+.beginning {
+  font-size: 20px;
+  width: 940px;
+  margin: 30px auto 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #111111;
+}
+
+.beginning_text {
+  font-size: 20px;
+  width: 940px;
+  margin: 0 auto;
+  font-family: 'Roboto' , sans-serif;
+  color: #444444;
+}
+
+.recipes {
+  font-size: 20px;
+  width: 940px;
+  margin: 30px auto 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #111111;
+}
+
+.recipes_text {
+  font-size: 20px;
+  width: 940px;
+  margin: 0 auto;
+  font-family: 'Roboto' , sans-serif;
+  color: #444444;
+}
+
+.recipes_img {
+  max-width: 940px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.recipes_img img {
+width: 100%;
+height: 280px;
+border-radius: 15px;
+}
+
+
+.recipes-by h3 {
+  font-size: 36px;
+  font-family: 'Roboto' , sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.recipes-by p {
+  font-size: 20px;
+  font-family: 'Roboto' , sans-serif;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ingredients {
+    height: 28px;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.ingredients h2 {
+  font-size: 24px;
+  font-family: 'Roboto' , sans-serif;
+  color: #111111;
+}
+
+.preparation-mode{
+  height: 28px;
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+}
+
+.preparation-mode h2{
+  font-size: 24px;
+  font-family: 'Roboto' , sans-serif;
+  color: #111111;
+  margin-bottom: 5px;
+  margin-right: 8px;
+}
+
+.preparation-mode .button {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999999;
+  font-family: 'Roboto' , sans-serif;
+  cursor: pointer;
+
+}
+
+.prep-mode{
+  max-width: 940px;
+  margin: 10px auto;
+  font-size: 18px;
+  font-family: 'Roboto' , sans-serif;
+  line-height: 28px;
+  color: #444444;
+  
+ 
+}
+
+.content.show{
+  padding-bottom: 2%;
+  display: block;
+  list-style-position: inside;
+}
+
+.content.hide{
+  max-width: 940px;
+  display: none;
+  overflow: hidden;
+}
+
+.rec_create {
+  display: flex;
+  justify-content: space-between;
+  max-width: 940px;
+  margin: 55px auto 30px;
+
+}
+
+.rec_create h2 {
+  font-family: 'roboto' , sans-serif;
+  font-size: 24px;
+  color: #111111;
+  
+}
+
+.rec_create button {
+  font-family: 'roboto' , sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #ffffff;
+  width: 139px;
+  height: 37px;
+  background-color: #6558C3;
+}
+
+
+.rec_img,.rec_add,
+.rec_prep, .add_inf
+{
+  max-width: 940px;
+  margin: 0 auto 15px;
+}
+
+.rec_img p,
+.rec_add p,
+.rec_prep p,
+.add_inf p  {
+  font-family: 'roboto' , sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+.rec_img input {
+  width: 940px;
+  height: 49px;
+  border: 1px solid #DDDDDD;
+  outline: none;
+}
+
+.rec_add input,.rec_prep input {
+  width: 940px;
+  height: 49px;
+  border: 1px solid #DDDDDD;
+  outline: none;
+  
+}
+
+.rec_img input::placeholder,
+.rec_add input::placeholder,
+.rec_prep input::placeholder {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.rec_add a,
+.rec_prep a {
+  font-size: 16px;
+  font-family: 'roboto' , sans-serif;
+  font-weight: bold;
+  color: #6558C3;
+  text-decoration: none;
+}
+
+.add_inf textarea {
+  width: 940px;
+  border: 1px solid #DDDDDD;
+  resize:vertical;
+  outline: none;
+  height: 150px;
+}
+
+.head_title {
+  max-width: 940px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.head_title p {
+  font-family: 'roboto' , sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 10px;
+
+}
+
+.btn_add_ing, .add_prep {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.btn_add_ing button,
+.add_prep button {
+  background: none;
+  font-size: 16px;
+  font-family: 'roboto' , sans-serif;
+  font-weight: bold;
+  color: #6558C3;
+  text-decoration: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

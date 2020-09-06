@@ -1,0 +1,50 @@
+{
+  "recipes": [
+    {
+      "url_img": "https://www.google.com",
+      "recipes_add": "carne",
+      "recipes_prep": "frite",
+      "additional_inf": "fritar"
+    },
+    {
+      "id": 2,
+      "url_img": "http://www.corvette.com",
+      "recipes_add": "farinha",
+      "recipes_prep": "misture",
+      "additional_inf": "farinha de trigo"
+    },
+    {
+      "id": 3,
+      "url_img": "www.google.com.br",
+      "recipes_add": "carne",
+      "recipes_prep": "frite",
+      "additional_inf": "carne de boi"
+    },
+    {
+      "id": 4,
+      "url_img": "www.carne.com.br",
+      "recipes_add": [
+        "carne",
+        "farinha",
+        "farinha"
+      ],
+      "recipes_prep": "misture",
+      "additional_inf": "muita carne"
+    },
+    {
+      "id": 5,
+      "url_img": "www.google.com.br",
+      "recipes_add": [
+        "farinha",
+        "carne",
+        "ovo"
+      ],
+      "recipes_prep": [
+        "separa",
+        "mistura",
+        "frita"
+      ],
+      "additional_inf": "bife a milanesa"
+    }
+  ]
+}

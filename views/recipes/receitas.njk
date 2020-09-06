@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <section>
+        
+        <div class="galeria_receitas">
+           {% for rec in recipes%}
+            <div class="receitas" id="{{rec.id}}">
+                <img src="{{rec.url_img}}" alt="burger">
+                <h4>{{rec.recipe_title}}</h4>
+                <h5>{{rec.recipe_author}}</h5>
+            </div>
+           {%endfor%}
+
+            {% for rec in recipes%}
+            <div class="receitas" id="{{rec.id}}">
+                <img src="{{rec.url_img}}" alt="burger">
+                <h4>{{rec.recipe_title}}</h4>
+                <h5>{{rec.recipe_author}}</h5>
+            </div>
+           {%endfor%}
+        </div>
+       
+     </section>      
+    {%endblock%}
+    

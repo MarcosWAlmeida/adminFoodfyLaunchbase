@@ -1,0 +1,31 @@
+{
+  "name": "foodfyadmin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'assets,views'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosWAlmeida/foodfy-launchbase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosWAlmeida/foodfy-launchbase/issues"
+  },
+  "homepage": "https://github.com/MarcosWAlmeida/foodfy-launchbase#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,83 @@
+ <div class="rec_img">
+     <p> Imagem da receita </p> 
+     <input type="text" name="url_img" placeholder="url da imagem da receita...">
+ </div>
+<div class="head_title">
+   <p> Ingredientes </p> 
+</div>
+
+<div id="ingredients">
+  <div class="rec_add">
+     <input type="text" name="recipes_add[]" value="" placeholder="Digite o ingrediente">
+ </div>
+</div>
+
+<div class="btn_add_ing">
+    <button type="button" class="add_ing">Adicionar Novo Ingrediente</button>
+</div>
+
+
+<div class="head_title">
+   <p> Modo de preparo </p> 
+</div>
+
+<div id="preparation_mode">
+    <div class="rec_prep">
+       <input type="text" name="recipes_prep[]" placeholder="Digite o próximo passo">
+    </div>
+</div>
+
+<div class="add_prep">
+    <button type="button" class="add_prep">Adicionar novo passo</button>
+</div>
+
+
+ <div class="add_inf">
+     <p> Informações Adicionais </p> 
+     <textarea name="additional_inf"></textarea>
+ </div>
+
+ <script>
+     function addRecipes() {
+       const ingredients = document.querySelector("#ingredients")
+       const fieldContainer = document.querySelectorAll(".rec_add")
+
+       // Realiza um clone do ultimo ingrediente adicionado
+        const newField = fieldContainer[fieldContainer.length - 1 ].cloneNode(true);
+
+        // Não adiciona um novo input se o ultimo tem um valore vazio
+
+        if (newField.children[0].value=="") return false;
+
+        // Deixa o valor do input vazio
+
+        newField.children[0].value="";
+        ingredients.appendChild(newField);
+       }
+
+       document.querySelector(".add_ing").addEventListener("click", addRecipes)
+
+
+
+        /* == Adicionar Modo de preparo == */
+
+      function addPrep() {
+       const preparations = document.querySelector("#preparation_mode")
+       const fieldContainer1 = document.querySelectorAll(".rec_prep")
+
+       // Realiza um clone do ultimo ingrediente adicionado
+        const newField1 = fieldContainer1[fieldContainer1.length - 1 ].cloneNode(true);
+
+        // Não adiciona um novo input se o ultimo tem um valore vazio
+
+        if (newField1.children[0].value=="") return false;
+
+        // Deixa o valor do input vazio
+
+        newField1.children[0].value="";
+        preparations.appendChild(newField1);
+       }
+
+       document.querySelector(".add_prep").addEventListener("click", addPrep)
+
+ </script>
